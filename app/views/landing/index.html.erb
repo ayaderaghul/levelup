@@ -1,0 +1,107 @@
+<section class="hero is-primary">
+  <div class="hero-body">
+    <div class="container">
+      <h1 class="title">
+        Reverse engineer a better version of you!
+      </h1>
+      <h2 class="subtitle">
+        We provide the most motivated app ever, to level up your life.
+      </h2>
+  <img src="/assets/team.jpg"/>
+    </div>
+  </div>
+</section>
+<section class="section">
+    <div class="columns is-mobile">
+        <div class="column">
+            Apply for beta, we are up for a chat:
+        </div>
+    <div class="column">  
+        <div class="field">
+            <div class="control">
+                <input class="input is-primary" type="text" placeholder="Your email, please">
+            </div>
+        </div>
+    </div>
+    <div class="column">
+        <button class="button is-primary">Sign me up</button>
+    </div>
+</div>
+</section>
+
+<section class="section">
+    <div class="columns is-mobile">
+        <div class="column">
+            Otherwise:
+        </div>
+    <div class="column">  
+        <%= link_to '<button class="button is-info">Log me in</button>'.html_safe, controller: 'home', action: 'index' %>
+        <%= link_to '<button class="button">Check out tutorial</button>'.html_safe, controller: 'landing', action: 'tutorial' %>
+    </div>
+</div>
+</section>
+
+<div class="pricing-table">
+  <div class="pricing-plan">
+    <div class="plan-header">Individual (Beta)</div>
+        <div class="plan-price"><span class="plan-price-amount"><span class="plan-price-currency">$</span>20</span>/year</div> 
+    <div class="plan-price"><span class="plan-price-amount"><span class="plan-price-currency">$</span>2</span>/month</div>
+    <div class="plan-items">
+      <div class="plan-item">Early coaching</div>
+      <div class="plan-item">Direct feedback</div>
+      <div class="plan-item">Feature request</div>
+      <div class="plan-item">Your-success oriented</div>
+    </div>
+    <div class="plan-footer">
+      <button class="button is-fullwidth" disabled="disabled">Current plan</button>
+    </div>
+  </div>
+
+  <div class="pricing-plan is-warning">
+    <div class="plan-header">Individual</div>
+        <div class="plan-price"><span class="plan-price-amount"><span class="plan-price-currency">$</span>57</span>/year</div>
+
+    <div class="plan-price"><span class="plan-price-amount"><span class="plan-price-currency">$</span>7</span>/month</div>
+    <div class="plan-items">
+      <div class="plan-item">Basic dashboard</div>
+      <div class="plan-item">Community</div>
+      <div class="plan-item">-</div>
+      <div class="plan-item">-</div>
+    </div>
+    <div class="plan-footer">
+      <button class="button is-fullwidth">Choose</button>
+    </div>
+  </div>
+
+  <div class="pricing-plan is-primary">
+    <div class="plan-header">Team</div>
+        <div class="plan-price"><span class="plan-price-amount"><span class="plan-price-currency">$</span>177</span>/year</div>
+
+    <div class="plan-price"><span class="plan-price-amount"><span class="plan-price-currency">$</span>17</span>/month</div>
+    <div class="plan-items">
+      <div class="plan-item">Basic dashboard</div>
+      <div class="plan-item">Community</div>
+      <div class="plan-item">Team coaching</div>
+      <div class="plan-item">-</div>
+    </div>
+    <div class="plan-footer">
+      <button class="button is-fullwidth">Choose</button>
+    </div>
+  </div>
+
+  <div class="pricing-plan is-danger">
+    <div class="plan-header">Enterprise</div>
+    <div class="plan-price"><span class="plan-price-amount"><span class="plan-price-currency">$</span>1127</span>/year</div>
+     <div class="plan-price"><span class="plan-price-amount"><span class="plan-price-currency">$</span>96</span>/month</div>
+    <div class="plan-items">
+      <div class="plan-item">Basic dashboard</div>
+      <div class="plan-item">Community</div>
+      <div class="plan-item">Team coaching</div>
+      <div class="plan-item">HR training</div>
+      
+    </div>
+    <div class="plan-footer">
+      <button class="button is-fullwidth">Choose</button>
+    </div>
+  </div>
+</div>

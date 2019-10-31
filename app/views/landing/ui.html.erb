@@ -34,7 +34,7 @@
         out of 100 lines of code.
       </div>
       <div class="column">
-        <button class="button is-primary"> done </button>
+        <button class="button is-success"> done </button>
         <button class="button is-info">edit</button>
       </div>
     </div>
@@ -48,7 +48,7 @@
         out of 3 pages of German.
       </div>
       <div class="column">
-        <button class="button is-primary"> done </button>
+        <button class="button is-success"> done </button>
         <button class="button is-info">edit</button>
       </div>
     </div>
@@ -62,7 +62,7 @@
         out of 30 min of breathing meditation.
       </div>
       <div class="column">
-        <button class="button is-primary"> done </button>
+        <button class="button is-success"> done </button>
         <button class="button is-info">edit</button>
       </div>
     </div>
@@ -82,6 +82,6 @@ here is how you are doing monthly:
 
     <button class="button is-primary">Upgrade</button>
     <button class="button is-info">Edit goals</button>
-    <button class="button">Go to tutorial</button>
+    <%= link_to '<button class="button">Tutorial</button>'.html_safe, controller: 'landing', action: 'tutorial' %>
     <button class="button">Feedback</button>
 </section>
