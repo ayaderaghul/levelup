@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html>
   <head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-31832445-4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-31832445-4');
+</script>
+
     <title>LevelUp</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,8 +25,12 @@
   </head>
 
   <body>
-   <p class="notice"><%= notice %></p>
-  <p class="alert"><%= alert %></p>
-    <%= yield %>
+
+<% flash.each do |key, value| %>
+  <div class="alert alert-<%= key %>"><%= value %> </div>
+<% end %>
+<%= yield %>  
+  <%= debug(params) if Rails.env.development? %>
+
   </body>
 </html>

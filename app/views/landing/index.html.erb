@@ -12,21 +12,21 @@
   </div>
 </section>
 <section class="section">
-    <div class="columns is-mobile">
-        <div class="column">
-            Apply for beta, we are up for a chat:
-        </div>
-    <div class="column">  
-        <div class="field">
-            <div class="control">
-                <input class="input is-primary" type="text" placeholder="Your email, please">
-            </div>
-        </div>
-    </div>
-    <div class="column">
-        <button class="button is-primary">Sign me up</button>
-    </div>
-</div>
+
+<%= form_for(Betum.new) do |f| %>
+<div class="columns is-mobile">
+<div class="column">
+  Apply for beta, we are up for a chat:
+  </div>
+  <div class="column">
+  <%= f.email_field :email, class: "input is-primary", placeholder: "Your email, please" %>
+  </div>
+  <div class="column">
+  <%= f.submit "Sign up for beta", class: "button is-primary" %>
+  </div>
+  </div>
+<% end %>
+    
 </section>
 
 <section class="section">
