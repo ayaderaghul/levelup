@@ -264,9 +264,12 @@ Get appointment with: general doctor, dentist, gynocologist, etc.<br>
 
 <section class="section">
 and here is your weekly chart:
+
+<% data = [[1, 97], [2, 80], [3, 66], [4, 23], [5, 70]] %>
+<%= line_chart data %>
 </section>
 <section class="section">
-
+ 
 <%= form_for(Betum.new) do |f| %>
 <div class="columns is-mobile">
 <div class="column">
