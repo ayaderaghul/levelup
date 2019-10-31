@@ -34,11 +34,13 @@
         <div class="column">
             Otherwise:
         </div>
-    <div class="column">  
-        <%= link_to '<button class="button is-info">Log me in</button>'.html_safe, controller: 'home', action: 'index' %>
-        <%= link_to '<button class="button">Check out tutorial</button>'.html_safe, controller: 'landing', action: 'tutorial' %>
+        <div class="column">  
+          <%= link_to '<button class="button is-info">Log me in</button>'.html_safe, controller: 'home', action: 'index' %>
+          </div>
+          <div class="column">
+          <%= link_to '<button class="button">Check out tutorial</button>'.html_safe, controller: 'landing', action: 'tutorial' %>
+        </div>
     </div>
-</div>
 </section>
 
 <div class="pricing-table">
