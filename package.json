@@ -2,7 +2,7 @@
   "name": "LevelUp",
   "private": true,
   "dependencies": {
-    "chart.js": "^2.9.1",
+    "chart.js": "^2.9.4",
     "chartkick": "^3.1.3"
   }
 }
